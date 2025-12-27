@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Fraud Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Email Fraud Detection System</h1>
+
+    <form action="/predict" method="post">
+        <textarea name="email" placeholder="Paste email text here..." required></textarea>
+        <br>
+        <button type="submit">Check Email</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result">
+            <h2>{{ prediction }}</h2>
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
