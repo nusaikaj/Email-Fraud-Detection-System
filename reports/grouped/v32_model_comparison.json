@@ -1,0 +1,68 @@
+[
+  {
+    "model": "logistic_regression",
+    "training_samples": 134381,
+    "validation_samples": 29883,
+    "accuracy": 0.9783823578623297,
+    "precision": 0.9745027714378872,
+    "recall": 0.9832225804329232,
+    "f1_score": 0.978843256697452,
+    "false_negatives": 255,
+    "false_positives": 391,
+    "confusion_matrix": [
+      [
+        14293,
+        391
+      ],
+      [
+        255,
+        14944
+      ]
+    ],
+    "training_seconds": 127.28
+  },
+  {
+    "model": "naive_bayes",
+    "training_samples": 134381,
+    "validation_samples": 29883,
+    "accuracy": 0.9504400495264866,
+    "precision": 0.9699876661641771,
+    "recall": 0.9313770642805448,
+    "f1_score": 0.9502903366562615,
+    "false_negatives": 1043,
+    "false_positives": 438,
+    "confusion_matrix": [
+      [
+        14246,
+        438
+      ],
+      [
+        1043,
+        14156
+      ]
+    ],
+    "training_seconds": 108.95
+  },
+  {
+    "model": "random_forest",
+    "training_samples": 40000,
+    "validation_samples": 29883,
+    "accuracy": 0.9041260917578556,
+    "precision": 0.9048713235294118,
+    "recall": 0.906835976051056,
+    "f1_score": 0.9058525845355065,
+    "false_negatives": 1416,
+    "false_positives": 1449,
+    "confusion_matrix": [
+      [
+        13235,
+        1449
+      ],
+      [
+        1416,
+        13783
+      ]
+    ],
+    "training_seconds": 73.36
+  }
+]

@@ -1,0 +1,35 @@
+# Python environment and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Private/local scan history and secrets
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+.env
+.env.*
+!.env.example
+
+# Large datasets and generated training artifacts
+datasets/
+spam.csv
+*.csv
+models_v31/
+models_v32/
+models_v32_grouped/
+*.joblib
+*.pkl
+
+# Local project / editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
